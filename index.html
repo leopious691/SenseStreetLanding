@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SenseStreet — Smart Road Safety Network</title>
+  <meta name="description" content="SenseStreet detects potholes, road hazards, and crashes using smartphone sensors and maps them in real time to make streets safer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand">SenseStreet</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#problem">Why</a>
+        <a href="#how-it-works">How</a>
+        <a href="#features">Features</a>
+        <a href="#users">Users</a>
+        <a href="#impact">Impact</a>
+        <a href="https://sense-street.vercel.app" class="btn btn-primary nav-btn" target="_blank" rel="noopener">Sign Up</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="hero-bg.png" alt="" />
+    </div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow hero-glow--cyan"></div>
+    <div class="hero-glow hero-glow--purple"></div>
+    <div class="floating-dots" id="floatingDots"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Smart Road Safety Network
+        </div>
+        <h1 class="hero-title">
+          <span class="gradient-text">SenseStreet</span>
+        </h1>
+        <p class="hero-tagline">Turning smartphones into smart road safety sensors.</p>
+        <p class="hero-desc">
+          SenseStreet detects potholes, road hazards, and crashes using smartphone sensors like accelerometer, gyroscope, and GPS — and maps them in real time to make streets safer.
+        </p>
+        <div class="btn-group">
+          <a href="https://sense-street.vercel.app" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Start Road Scan
+          </a>
+          <a href="#features" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            View Hazard Map
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEM ===================== -->
+  <section class="section problem" id="problem">
+    <div class="container">
+      <span class="section-label reveal">The Problem</span>
+      <h2 class="section-title reveal">Why SenseStreet Matters</h2>
+      <p class="section-desc reveal">
+        Road accidents and unsafe street conditions remain a major challenge worldwide.
+      </p>
+
+      <div class="problem-grid">
+        <div class="problem-card reveal reveal-delay-1">
+          <div class="problem-icon">⚠️</div>
+          <h3>Hidden Hazards</h3>
+          <p>Potholes, poor road surfaces, and sudden obstacles often go unreported until they cause accidents or vehicle damage.</p>
+        </div>
+        <div class="problem-card reveal reveal-delay-2">
+          <div class="problem-icon">📊</div>
+          <h3>Lack of Real-Time Data</h3>
+          <p>Cities lack real-time data about road conditions, making it difficult to respond quickly to dangerous situations.</p>
+        </div>
+        <div class="problem-card reveal reveal-delay-3">
+          <div class="problem-icon">📱</div>
+          <h3>The Solution Is in Your Pocket</h3>
+          <p>SenseStreet helps solve this problem by crowdsourcing road condition data using the sensors already present in smartphones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-title reveal">Smartphone Sensors Detect Road Conditions</h2>
+        <p class="section-desc mx-auto reveal">
+          SenseStreet collects and analyzes motion data to identify road anomalies such as potholes, sudden braking zones, and potential crashes. When a hazard is detected, the location is recorded and displayed on a live map.
+        </p>
+      </div>
+
+      <div class="how-it-works-grid">
+        <div class="sensor-card reveal reveal-delay-1">
+          <div class="sensor-icon">📐</div>
+          <h3>Accelerometer</h3>
+          <p>Detects sudden bumps and vertical motion changes</p>
+        </div>
+        <div class="sensor-card reveal reveal-delay-2">
+          <div class="sensor-icon">🔄</div>
+          <h3>Gyroscope</h3>
+          <p>Measures orientation and rotational movement</p>
+        </div>
+        <div class="sensor-card reveal reveal-delay-3">
+          <div class="sensor-icon">📍</div>
+          <h3>GPS</h3>
+          <p>Pinpoints exact hazard locations on the map</p>
+        </div>
+        <div class="sensor-card reveal reveal-delay-4">
+          <div class="sensor-icon">⚡</div>
+          <h3>Speed</h3>
+          <p>Monitors velocity changes and sudden braking</p>
+        </div>
+      </div>
+
+      <!-- Process Flow -->
+      <div class="process-flow reveal">
+        <div class="process-step">
+          <span class="step-icon">📱</span>
+          <span class="step-text">Phone Sensors</span>
+        </div>
+        <span class="process-arrow">→</span>
+        <div class="process-step">
+          <span class="step-icon">🧠</span>
+          <span class="step-text">Hazard Detection</span>
+        </div>
+        <span class="process-arrow">→</span>
+        <div class="process-step">
+          <span class="step-icon">🔥</span>
+          <span class="step-text">Firebase</span>
+        </div>
+        <span class="process-arrow">→</span>
+        <div class="process-step">
+          <span class="step-icon">🗺️</span>
+          <span class="step-text">Live Map</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label reveal">Features</span>
+        <h2 class="section-title reveal">Powerful Road Intelligence</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon feature-icon--pothole">🕳️</div>
+          <h3>Automatic Pothole Detection</h3>
+          <p>Detects sudden vertical vibrations caused by potholes using accelerometer data in real time.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon feature-icon--crash">💥</div>
+          <h3>Crash Detection</h3>
+          <p>Identifies severe motion spikes and sudden stops that may indicate an accident has occurred.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon feature-icon--map">🗺️</div>
+          <h3>Live Hazard Map</h3>
+          <p>Displays potholes, hazard zones, and crash alerts on an interactive real-time map.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <div class="feature-icon feature-icon--score">📈</div>
+          <h3>Road Safety Score</h3>
+          <p>Analyzes collected data to estimate road safety levels across different areas of the city.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHO CAN USE ===================== -->
+  <section class="section" id="users">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label reveal">For Everyone</span>
+        <h2 class="section-title reveal">Who Can Use SenseStreet</h2>
+      </div>
+
+      <div class="users-grid">
+        <div class="user-card reveal reveal-delay-1">
+          <div class="user-avatar">🚗</div>
+          <h3>Drivers</h3>
+          <p>Avoid dangerous roads and potholes before they damage your vehicle.</p>
+        </div>
+        <div class="user-card reveal reveal-delay-2">
+          <div class="user-avatar">🏛️</div>
+          <h3>City Authorities</h3>
+          <p>Monitor road conditions and prioritize repairs effectively.</p>
+        </div>
+        <div class="user-card reveal reveal-delay-3">
+          <div class="user-avatar">🚑</div>
+          <h3>Emergency Services</h3>
+          <p>Identify accident locations quickly for faster response.</p>
+        </div>
+        <div class="user-card reveal reveal-delay-4">
+          <div class="user-avatar">🚚</div>
+          <h3>Transport Companies</h3>
+          <p>Protect vehicles and optimize delivery routes.</p>
+        </div>
+        <div class="user-card reveal reveal-delay-1">
+          <div class="user-avatar">👥</div>
+          <h3>Communities</h3>
+          <p>Report and share safety hazards with your neighborhood.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== IMPACT ===================== -->
+  <section class="section impact" id="impact">
+    <div class="container">
+      <div class="impact-content">
+        <span class="section-label reveal">Real-World Impact</span>
+        <h2 class="section-title reveal">Building a Safer Tomorrow</h2>
+        <p class="impact-text reveal">
+          With enough users, SenseStreet can create a crowdsourced road intelligence network that helps cities identify unsafe roads and improve infrastructure.
+        </p>
+        <p class="impact-text reveal">
+          Every smartphone becomes a road condition sensor, enabling communities to build safer transportation systems.
+        </p>
+        <div class="impact-highlight reveal">
+          🌍 Every Ride Makes Roads Safer for Everyone
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="section cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-label reveal">Join the Movement</span>
+        <h2 class="cta-title reveal">Help Build Safer Streets</h2>
+        <p class="cta-desc reveal">Start contributing road safety data today.</p>
+        <div class="btn-group reveal">
+          <a href="https://sense-street.vercel.app" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Start Road Scan
+          </a>
+          <a href="#features" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Explore Hazard Map
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">SenseStreet</span>
+        <span class="footer-tagline">Smart Road Safety Network</span>
+        <div class="footer-divider"></div>
+        <p class="footer-hackathon">Built for <strong>Hack4Safety</strong></p>
+        <p class="footer-sub">Powered by smartphone sensors and real-time data.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    // ---- Navbar scroll effect ----
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ---- Mobile nav toggle ----
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // ---- Scroll reveal ----
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ---- Floating sensor dots ----
+    const dotsContainer = document.getElementById('floatingDots');
+    const colors = ['#00d2ff', '#7b2ff7', '#c850c0', '#00e676'];
+
+    function createDot() {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      const size = Math.random() * 5 + 2;
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      dot.style.cssText = `
+        width: ${size}px;
+        height: ${size}px;
+        left: ${Math.random() * 100}%;
+        bottom: -10px;
+        background: ${color};
+        box-shadow: 0 0 ${size * 3}px ${color};
+        animation-duration: ${Math.random() * 8 + 6}s;
+        animation-delay: ${Math.random() * 4}s;
+      `;
+      dotsContainer.appendChild(dot);
+
+      // Remove dot after animation
+      setTimeout(() => dot.remove(), 14000);
+    }
+
+    // Create dots periodically
+    setInterval(createDot, 600);
+    // Initial burst
+    for (let i = 0; i < 15; i++) setTimeout(createDot, i * 200);
+
+    // ---- Smooth scroll for anchor links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
